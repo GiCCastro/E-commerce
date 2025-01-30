@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #3f3f37;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 4rem;
+    padding-top: 4rem;
+
+}
+
+main .no-results {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+main .no-results p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem 0 0 0;
+    width: 75%;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0.5rem;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+.product-list .product {
+    width: 18rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+
+}
+
+.product-list .product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);    
+    background-color: #fff;
+}
+
+.product-list .product p {
+    font-size: 1.6rem;
+}
+
+
+.product-list .product button.heart {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-list .product button.heart i {
+    font-size: 1.5rem;
+    color: #838383;
+
+}
+
+.product-list .product button.heart.active i {
+    color: #ff774d;
+}
+
+
+.product-list .product button.link-product,
+.product-list .empty-message .explore-button {
+    background-color: #8fbf5c;
+    width: 80%;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.product-list .product button.link-product:hover,
+.product-list .empty-message .explore-button:hover {
+    background-color: #538d22;
+}
+
+.product-list .empty-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.product-list .empty-message .explore-button {
+    width: 18rem;
+}
+
+main .about,
+main .contact {
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+
+main .about {
+    line-height: 1.5rem;
+    padding: 0rem 4rem 3rem;
+
+}
+
+main .contact {
+    background-color: #ddedc7;
+    padding: 2rem 4rem;
+}
+
+main .contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+main .contact .contact-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+main .contact .contact-content .social .phone-adress ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main .contact .contact-content .social .social-media p,
+main .contact .contact-content .social .social-media i {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+main .contact .contact-content .social .social-media {
+    margin-top: 5rem;
+}
+
+main .contact .contact-content .social .social-media i {
+    color: #ff774d;
+    transition: color 0.3s;
+}
+
+main .contact .contact-content .social .social-media i:hover {
+    color: #fb5a44;
+}
+
+main .contact .contact-content .social .social-media ul {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+main .contact form fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-color: #e2e1e0;
+    width: 300px;
+}
+
+main .contact form fieldset legend {
+    color: #ff774d;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+main .contact form fieldset input,
+main .contact form fieldset button {
+    height: 3rem;
+    border: none;
+}
+
+
+main .contact form fieldset input,
+main .contact form fieldset textarea {
+    width: 85%;
+    font-size: 1rem;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+
+}
+
+main .contact form fieldset textarea {
+    resize: none;
+    height: 6rem;
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+}
+
+main .contact form fieldset button {
+    width: 85%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff774d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+main .contact form fieldset button:hover {
+    background-color: #fb5a44;
+}
+
+@media (max-width: 1100) {
+    main .contact .contact-content .social .social-media p {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 923px) {
+
+    main {
+        margin-top: 5.5rem;
+        padding-top: 5.5rem;
+    }
+
+    main .contact .contact-content .social .social-media p {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 1.75rem;
+    }
+
+    .product-list .product {
+        padding: 1.5rem 1rem;
+    }
+
+    .product-list .product img {
+        width: 250px;
+    }
+
+
+    main .about {
+        line-height: 1.5rem;
+        padding: 3rem 1rem;
+    }
+
+    main .contact {
+        padding: 2rem 1rem;
+    }
+
+    main .contact .contact-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    main .contact form {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .about,
+    main .contact {
+        margin-top: 0rem;
+        font-size: 1rem;
+    }
+
+    main .contact .contact-content .social .social-media p,
+    main .contact .contact-content .social .social-media i {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .product-list .product {
+        width: 15rem;
+    }
+
+    .product-list .product img {
+        width: 12rem;
+    }
+}

@@ -1,0 +1,131 @@
+
+.footer-section .newsletter {
+    background-color: #a85b4a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.footer-section .newsletter{
+    color: #fff;
+}
+
+.footer-section .newsletter .text h2 {
+    text-transform: uppercase;
+}
+
+.footer-section .newsletter form {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-section .newsletter form .email,
+.btn {
+    border-style: none;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+
+.footer-section .newsletter form .email {
+    font-size: 1rem;
+    height: 3rem;
+}
+
+.footer-section .newsletter form .btn {
+    background-color: #8fbf5c;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section .newsletter form .btn:hover {
+    background-color: #538d22;
+}
+
+.footer-section .main-content {
+    background-color: #ddedc7;
+    padding: 2rem 4rem;
+}
+
+.footer-section .main-content .main-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.footer-section .main-content .main-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.footer-section .main-content .main-sections ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section .main-content .main-sections ul li a,
+.footer-section .main-content .credits a {
+    text-decoration: none;
+    color: #3f3f37;
+    transition: color 0.3s;
+}
+
+.footer-section .main-content .main-sections ul li a:hover {
+    text-decoration: underline;
+    color: #ff774d;
+}
+
+.footer-section .main-content .credits {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer-section .main-content hr {
+    height: 1px;
+    border: none;
+    background-color: #97c853;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-section .newsletter {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .footer-section .newsletter h2 {
+        font-size: larger;
+    }
+
+    .footer-section .newsletter form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .footer-section .newsletter form .email,
+    .btn {
+    max-width: 100%;
+}
+
+    .footer-section .main-content {
+        padding: 1rem;
+    }
+ 
+}

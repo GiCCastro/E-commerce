@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/components/menu.css">
+    <link rel="stylesheet" href="css/components/responsive-menu/menu-mobile.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/components/footer.css">
+
+    <link rel="shortcut icon" href="assets/images/esportes.png" type="image/x-icon">
+    <title>Favoritos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-icons">
+                <i class="fa fa-bars" onclick="toggleMenu()"></i>
+                <div class="heart-cart">
+                    <a href="favorite.html"><i class="fas fa-heart"></i></a>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="query" placeholder="Qual produto você procura?" id="searchbar"
+                    oninput="search()">
+            </div>
+
+            <a href="index.html" class="logo-main">
+                <img src="assets/images/esportes.png" alt="SportZone">
+                <p>Sport<span>Zone</span></p>
+            </a>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Produtos</a></li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                    <li><a href="favorite.html"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <div class="header-mobile-menu">
+                    <div class="welcome-menu">Seja bem-vindo(a)!</div>
+                    <ul>
+                        <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+                        <li><a href="index.html#products" onclick="closeMenu()">Produtos</a></li>
+                        <li><a href="index.html#about" onclick="closeMenu()">Sobre</a></li>
+                        <li><a href="index.html#contact" onclick="closeMenu()">Contato</a></li>
+
+                    </ul>
+                </div>
+                <div class="close" onclick="toggleMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="no-results" id="no-results">
+            <p>Desculpe, não encontramos produtos que correspondam à sua busca. Tente usar termos diferentes ou
+                verificar a ortografia.</p>
+        </div>
+        <ul class="product-list" id="product-favorite"></ul>
+    </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="newsletter">
+            <div class="text">
+                <h2>Assine nossa Newsletter</h2>
+                <p>Assine nossa newsletter e receba um desconto especial de 10%.</p>
+            </div>
+            <form>
+                <input class="email" type="email" placeholder="Digite seu e-mail">
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="main-content">
+            <div class="main-sections">
+                <div class="footer-navigation">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h3>Contatos</h3>
+                    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                    <p><strong>Email:</strong> contato@sportzone.com</p>
+                    <p><strong>Endereço:</strong> Avenida Esportiva, 789, Bairro Primavera, São Paulo, SP</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <ul class="social-media-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 SportZone. Todos os direitos reservados.</p>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="credits">
+                <a href="https://www.flaticon.com/free-icons/sports" title="sports icons">Sports icons created by Jesus
+                    Chavarria - Flaticon</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+    <script src="js/api/productData.js"></script>
+    <script src="js/components/main.js"></script>
+    <script src="js/components/favorite.js"></script>
+    <script src="js/responsive/menu-mobile.js"></script>
+
+</body>
+
+</html>

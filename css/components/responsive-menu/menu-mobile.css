@@ -1,0 +1,144 @@
+
+.navbar .menu-icons {
+  display: none;
+}
+
+.navbar .mobile-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+
+.navbar .mobile-menu.active {
+  transform: translateX(0);
+}
+
+.navbar .mobile-menu .header-mobile-menu .welcome-menu {
+  background-color: #8fbf5c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+
+}
+
+.navbar .mobile-menu .header-mobile-menu{
+  box-shadow: 8px 0 16px rgba(0, 0, 0, 0.1);
+  width: calc(100vw - 50px);
+
+}
+
+.navbar .mobile-menu .header-mobile-menu ul {
+  padding: 1rem;
+  height: 100Vh;
+  background-color: #ddedc7;
+  margin: 0;
+}
+
+.navbar .mobile-menu  .header-mobile-menu ul li {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  border-bottom:solid 1px #333;
+}
+
+.navbar .mobile-menu  .header-mobile-menu ul li i{
+  font-size: 1.5rem;
+}
+.navbar .mobile-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  text-transform: uppercase;
+
+}
+
+.navbar .mobile-menu ul li a:hover {
+  color: #538d22;
+}
+
+.navbar .mobile-menu .close{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px; 
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #a85b4a;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1100px) {
+
+  .navbar .search{
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 923px) {
+
+  header{
+    padding:0;
+}
+
+  .navbar {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .navbar .logo-main {
+    order: 2;
+  }
+
+  .navbar .search {
+    margin: 0.5rem 0;
+    order: 3;
+    width: 90%;
+  }
+
+  
+
+.navbar .menu-icons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    order: 1;
+    width: 100vw;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+
+.navbar .menu-icons .fa.fa-bars,
+.navbar .menu-icons .fas.fa-heart,
+.navbar .menu-icons .fa.fa-shopping-cart{
+  color: #fff;
+}
+
+.navbar .menu-icons .fa.fa-bars{
+  margin-left: 1rem;
+}
+
+.navbar .menu-icons .heart-cart{
+  display: flex;
+  margin-right: 1rem;
+  gap: 1rem;
+}
+.navbar  .menu {
+    display: none;
+  }
+
+.navbar  .mobile-menu {
+    display: flex;
+  }
+}
